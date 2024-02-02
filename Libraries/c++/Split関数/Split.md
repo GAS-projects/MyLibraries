@@ -13,57 +13,6 @@
 
 文字列を区切る際に、Split()を呼び出します。
 
-# Split()のサンプルコード
-・ヘッダファイル(Split.h)
-
-ここで関数のプロトタイプ宣言。
-
-```
-#ifndef _SPLIT_H_
-#define _SPLIT_H_
-
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-void Split(string str, vector<string> *strArray, char splitChar);
-
-#endif
-```
-
-・ソースファイル(Split.cpp)
-
-ここで定義。
-
-```
-#include <iostream>
-#include <vector>
-#include "Split.h"
-
-using namespace std;
-
-void Split(string str, vector<string> *strArray, char splitChar){
-  string word;
-
-  str += splitChar; //最後の語句もしっかりと区切るために着けている。
-
-  for(int i = 0; i <= str.length(); i++){
-
-    if(str[i] == splitChar){
-
-      strArray -> push_back(word);
-      word = "";
-      continue; //区切り文字をリストの要素に入れさせないため、一文字飛ばしている。
-
-    }
-    word += str[i];
-
-  }
-
-  return;
-}
-```
 # 使い方
 文字列を区切るために、以下のステップを踏んでください。
 
