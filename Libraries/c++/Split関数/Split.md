@@ -32,7 +32,7 @@ int main() {
   string str = "Hello, that is the real person. That's so cool and beautiful!";
   vector<string> strArray;
 
-  Split(str, &strArray, ' ');
+  Split(str, &strArray, ' '); //これが区切るためのSplit関数。
 
   for(int i = 0; i < strArray.size(); i++) cout << strArray[i] << endl;
 
