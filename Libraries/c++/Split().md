@@ -105,8 +105,8 @@ beautiful!
 
 まず、Split()には三つの引数があります。
 
-第一引数(std::string str)・・・区切られるの文字列を格納。
+-第一引数(std::string str)・・・区切られるの文字列を格納。
 
-第二引数(vector<std::string> *strArray)・・・区切られた文字列が格納されるリストのアドレス。ここに区切られた文字列が入る。
+-第二引数(vector<std::string> *strArray)・・・区切られた文字列が格納されるリストのアドレス。ここに区切られた文字列が入る。
 
-第三引数(char splitChar)・・・区切る文字。
+-第三引数(char splitChar)・・・区切る文字。
