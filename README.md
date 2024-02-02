@@ -15,4 +15,4 @@ So, I would appreciate it if you don't give me any grief about my English.
 
 __Forgive me if this may be offensive writing.__
 
-[ ]I understand this.
+[]I understand this.
