@@ -24,3 +24,5 @@ void Split(string str, vector<string> *strArray, char splitChar){
 
   return;
 }
+
+/*これで定義をしている*/
