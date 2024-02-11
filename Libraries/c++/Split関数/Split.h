@@ -6,14 +6,13 @@
 
 using namespace std;
 
-void Split(string str, vector<string> &strArray, char splitChar){
+void Split(const string &str, vector<string> &strArray, char splitChar){
+  
   string word;
-
-  str += splitChar; //最後の語句もしっかりと区切るためにつけている。
 
   for(int i = 0; i <= str.length(); i++){
 
-    if(str[i] == splitChar){
+    if(str[i] == splitChar || i == str.length()){
 
       if(word != "") strArray.push_back(word);
       word = "";
