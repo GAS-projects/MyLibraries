@@ -8,7 +8,7 @@ void Split(const string &str, vector<string> &strArray, char splitChar){
 
   string word;
 
-  for(int i = 0; i < str.length(); i++){
+  for(unsigned int i = 0; i < str.length(); i++){
 
     if(str[i] != splitChar && i == str.length() - 1){
       word += str[i];
