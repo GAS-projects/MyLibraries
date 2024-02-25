@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Split(const string &str, vector<string> &strArray, char splitChar);
+vector<string> Split(const string &str, char splitChar);
 
 #endif
 
