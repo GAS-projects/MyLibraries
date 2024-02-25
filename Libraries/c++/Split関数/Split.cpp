@@ -4,11 +4,12 @@
 
 using namespace std;
 
-void Split(const string &str, vector<string> &strArray, char splitChar){
+vector<string> Split(const string &str, char splitChar){
 
+  vector<string> strArray;
   string word;
 
-  for(unsigned int i = 0; i < str.length(); i++){
+  for(int i = 0; i < str.length(); i++){
 
     if(str[i] != splitChar && i == str.length() - 1){
       word += str[i];
@@ -24,5 +25,5 @@ void Split(const string &str, vector<string> &strArray, char splitChar){
 
   }
 
-  return;
+  return strArray;
 }
