@@ -11,7 +11,7 @@ void Shuffle(vector<T> &deck){
   srand((unsigned long)time(nullptr));
 
   T temp;
-  T *temp2 = (T *)malloc(sizeof(T));
+  T *temp2;
 
   for(int i = 0; i < deck.size(); i++){
     temp = deck[i];
